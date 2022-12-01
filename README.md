@@ -53,6 +53,36 @@ List each employee in the Sales and Development departments, including their emp
 
 List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
 
+Bonus
+As you examine the data, you begin to suspect that the dataset is
+fake. Maybe, your boss gave you spurious data to test the data
+engineering skills of a new employee? To confirm your hunch, you
+decide to create a visualisation of the data to present to your boss.
+To do so, complete the following steps:
+1. Import the SQL database into Pandas. (Although you could
+read the CSV files directly in Pandas, you’re trying to prove
+your technical resourcefulness.) Note that this step might
+require some research. Feel free to use the following code to
+get started (where &lt;your_db_name&gt; is your database name):
+
+2. from sqlalchemy import create_engine
+
+3. engine = create_engine(&#39;postgresql://localhost:5432/&lt;your_db_name&gt;&#39;)
+
+4. connection = engine.connect()
+
+NOTE
+For more information about the create_engine function, see
+the SQLAlchemy documentationLinks to an external site..
+If you’re using a password, don’t upload it to your GitHub
+repository. For more information, review the Oops! I
+Committed My Password To GitHub!Links to an external
+site. video and Ignoring filesLinks to an external site. in
+GitHub Docs.
+5. Create a histogram to visualise the employee salary ranges
+that were the most common.
+6. Create a bar chart of average salary by title.
+
 ## Requirements
 Data Modelling (10 points)
 Entity Relationship Diagram is included or table schemas provided for all tables (10 points)
@@ -73,13 +103,7 @@ List first name, last name, and sex of each employee whose first name is Hercule
 List each employee in the Sales department, including their employee number, last name, and first name (2 points)
 List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name (4 points)
 List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name) (4 points)
-Grade	Points
-A (+/-)	90+
-B (+/-)	80–89
-C (+/-)	70–79
-D (+/-)	60–69
-F (+/-)	< 60
-Submission
+
 Before submitting your Challenge assignment, make sure that you’ve done the following:
 
 Create an image file of your ERD.
